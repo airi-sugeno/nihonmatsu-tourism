@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>二本松観光サイト</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="background"></div>
+<div class="layout">
+
+    <!-- 左カラム（PCのみ） -->
+    <aside class="pc-info">
+        <div id="concept">
+            <img src="img/logo_fv.png" alt="ロゴ">
+
+            <p>
+            福島県二本松市の観光情報を紹介するサイトです。<br>
+            グルメ・観光スポット・イベントなど<br>
+            二本松の魅力をまとめています。
+            </p>
+        </div>
+    </aside>
+
+    <!-- 右カラム（スマホ幅サイト） -->
+    <div class="site-area">
+
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/logo.png">
+            <p>二本松市のスポット情報サイト</p>
+            </a>
+        </div>
+
+        <div class="floating">
+            <!-- マイマップ -->
+            <a class="mymap">マイマップ</a>
+
+            <!-- TOP -->
+            <div class="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                <img src="img/icon_ttp.png" alt="to top">
+            </div>
+        </div>
+
+        <!-- ナビ -->
+        <nav class="bottom-nav">
+            <div class="nav-inner">
+                <a class="nav_gourmet">グルメ</a>
+                <a class="nav_spot">スポット</a>
+                <a class="nav_event">イベント</a>
+                <a class="nav_hm">
+                    <div class="btn-trigger" id="btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <div class="menu-panel">
+            <ul class="menu-panel1">
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="about.html">二本松市について</a></li>
+                <li><a href="contact.html">お知らせ一覧</a></li>
+            </ul>
+            <div class="keyword">
+                <h2>#キーワード</h2>
+                <ul>
+                    <li><a href="#">#温泉</a></li>
+                    <li><a href="#">#足湯</a></li>
+                    <li><a href="#">#ラーメン</a></li>
+                    <li><a href="#">#カフェ</a></li>
+                    <li><a href="#">#アイス</a></li>
+                    <li><a href="#">#祭り</a></li>
+                    <li><a href="#">#自然</a></li>
+                    <li><a href="#">#体験</a></li>
+                    <li><a href="#">#施設</a></li>
+                    <li><a href="#">#親子</a></li>
+                    <li><a href="#">#丼</a></li>
+                    <li><a href="#">#お土産</a></li>
+                    <li><a href="#">#蕎麦</a></li>
+                    <li><a href="#">#イベント</a></li>
+                    <li><a href="#">#温泉</a></li>
+                    <li><a href="#">#足湯</a></li>
+                    <li><a href="#">#ラーメン</a></li>
+                    <li><a href="#">#カフェ</a></li>
+                    <li><a href="#">#アイス</a></li>
+                    <li><a href="#">#祭り</a></li>
+                    <li><a href="#">#自然</a></li>
+                    <li><a href="#">#体験</a></li>
+                    <li><a href="#">#施設</a></li>
+                    <li><a href="#">#親子</a></li>
+                    <li><a href="#">#丼</a></li>
+                    <li><a href="#">#お土産</a></li>
+                    <li><a href="#">#蕎麦</a></li>
+                    <li><a href="#">#イベント</a></li>
+                </ul>
+            </div>
+            <ul class="menu-panel2">
+                <li><a href="#">さいとぽりしー</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <div class="wrapper">
+
+            <!-- ファーストビュー -->
+            <section class="firstview">
+                <div class="slider">
+                    <div class="slide active" style="background-image:url(img/slide1.jpg)"></div>
+                    <div class="slide" style="background-image:url(img/slide2.jpg)"></div>
+                    <div class="slide" style="background-image:url(img/slide3.jpg)"></div>
+                </div>
+
+                <div class="catch">
+                    <h1>
+                    食べて、歩いて、楽しむ。<br>
+                    二本松のいいトコまとめ
+                    </h1>
+                </div>
+            </section>
+
+            <!-- このサイトについて -->
+            <section class="section about">
+                <h2>地元グルメや観光スポット、<br>
+                    イベント情報をまとめています。</h2>
+                <p>私の趣味で二本松市の魅力をまとめています。<br>
+                    二本松市を訪れた方、訪れる予定の方、ぜひご活用ください。</p>
+                <a class="more" href="about.html">二本松市について</a>
+            </section>
+
+            <div class="parallax p1"></div>
+
+            <!-- グルメ -->
+            <section class="section">
+                <h2>グルメ</h2>
+
+                <p>昔ながらのお店、おしゃれなカフェ。<br>
+                    澄んだ空気と水で育った食材たち。</p>
+
+                <div class="show-area">
+                    <img src="img/g1.jpg">
+                    <img src="img/g2.jpg">
+                    <img src="img/g3.jpg">
+                </div>
+                <a class="more">お店をさがす</a>
+            </section>
+
+            <div class="parallax p2"></div>
+
+            <!-- スポット -->
+            <section class="section">
+                <h2>スポット・体験</h2>
+
+                <p>知る、歴史。<br>
+                    感じる、自然。<br>
+                    癒す、温泉。</p>
+
+                <div class="show-area">
+                    <img src="img/s1.jpg">
+                    <img src="img/s2.jpg">
+                    <img src="img/s3.jpg">
+                </div>
+
+                <a class="more">スポットをさがす</a>
+            </section>
+
+            <div class="parallax p3"></div>
+
+            <!-- イベント -->
+            <section class="section">
+                <h2>イベント</h2>
+
+                <p>お祭り。伝統。<br>
+                    親子で楽しめるイベント。<br>
+                    二本松をも盛り上げるイベント情報。<br>
+                    （二本松市の掲載したいイベントがあれば掲載いたします）</p>
+
+                <div class="show-area">
+                    <img src="img/e1.jpg">
+                    <img src="img/e2.jpg">
+                    <img src="img/e3.jpg">
+                </div>
+
+                <a class="more">イベントをさがす</a>
+            </section>
+
+            <!-- お知らせ -->
+            <section class="news">
+                <h2>お知らせ</h2>
+                
+                <div class="news-list">
+                    <a class="news-item">
+                    <img src="img/noimg.jpg">
+                    <h3>二本松の提灯祭り2025</h3>
+                    <time>2026.03.01</time>
+                    </a>
+
+                    <a class="news-item">
+                    <img src="img/noimg.jpg">
+                    <h3>冬イベント情報</h3>
+                    <time>2026.02.20</time>
+                    </a>
+
+                    <a class="news-item">
+                    <img src="img/noimg.jpg">
+                    <h3>観光ガイド更新</h3>
+                    <time>2026.02.10</time>
+                    </a>
+
+                    <a class="news-item">
+                    <img src="img/noimg.jpg">
+                    <h3>新店舗オープン</h3>
+                    <time>2026.02.05</time>
+                    </a>
+
+                    <a class="news-item">
+                    <img src="img/noimg.jpg">
+                    <h3>アクセス情報</h3>
+                    <time>2026.01.28</time>
+                    </a>
+                </div>
+
+                <a class="news-more">お知らせ一覧へ</a>
+            </section>
+
+            <!-- キーワード -->
+            <section class="section keyword">
+                <h2>#キーワード</h2>
+                <ul>
+                    <li><a href="#">#温泉</a></li>
+                    <li><a href="#">#足湯</a></li>
+                    <li><a href="#">#ラーメン</a></li>
+                    <li><a href="#">#カフェ</a></li>
+                    <li><a href="#">#アイス</a></li>
+                    <li><a href="#">#祭り</a></li>
+                    <li><a href="#">#自然</a></li>
+                    <li><a href="#">#体験</a></li>
+                    <li><a href="#">#施設</a></li>
+                    <li><a href="#">#親子</a></li>
+                    <li><a href="#">#丼</a></li>
+                    <li><a href="#">#お土産</a></li>
+                    <li><a href="#">#蕎麦</a></li>
+                    <li><a href="#">#イベント</a></li>
+                    <li><a href="#">#温泉</a></li>
+                    <li><a href="#">#足湯</a></li>
+                    <li><a href="#">#ラーメン</a></li>
+                    <li><a href="#">#カフェ</a></li>
+                    <li><a href="#">#アイス</a></li>
+                    <li><a href="#">#祭り</a></li>
+                    <li><a href="#">#自然</a></li>
+                    <li><a href="#">#体験</a></li>
+                    <li><a href="#">#施設</a></li>
+                    <li><a href="#">#親子</a></li>
+                    <li><a href="#">#丼</a></li>
+                    <li><a href="#">#お土産</a></li>
+                    <li><a href="#">#蕎麦</a></li>
+                    <li><a href="#">#イベント</a></li>
+                </ul>
+            </section>
+
+            <footer>
+                <ul class="menu-panel2">
+                    <li><a href="#">さいとぽりしー</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+                <small>&copy; 2026 nihome</small>
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

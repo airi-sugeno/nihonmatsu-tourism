@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>二本松について | 二本松観光サイト</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="background"></div>
+<div class="layout">
+
+    <!-- 左カラム（PCのみ） -->
+    <aside class="pc-info">
+        <div id="concept">
+            <img src="img/logo_fv.png" alt="ロゴ">
+
+            <p>
+            福島県二本松市の観光情報を紹介するサイトです。<br>
+            グルメ・観光スポット・イベントなど<br>
+            二本松の魅力をまとめています。
+            </p>
+        </div>
+    </aside>
+
+    <!-- 右カラム（スマホ幅サイト） -->
+    <div class="site-area">
+
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/logo.png">
+            <p>二本松市のスポット情報サイト</p>
+            </a>
+        </div>
+
+        <div class="floating">
+            <!-- マイマップ -->
+            <a class="mymap">マイマップ</a>
+
+            <!-- TOP -->
+            <div class="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                <img src="img/icon_ttp.png" alt="to top">
+            </div>
+        </div>
+
+        <!-- ナビ -->
+        <nav class="bottom-nav">
+            <div class="nav-inner">
+                <a class="nav_gourmet">グルメ</a>
+                <a class="nav_spot">スポット</a>
+                <a class="nav_event">イベント</a>
+                <a class="nav_hm">
+                    <div class="btn-trigger" id="btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <div class="menu-panel">
+            <ul class="menu-panel1">
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="about.html">二本松市について</a></li>
+                <li><a href="#">お知らせ一覧</a></li>
+            </ul>
+            <div class="keyword">
+                <h2>#キーワード</h2>
+                <ul>
+                    <li><a href="#">#温泉</a></li>
+                    <li><a href="#">#足湯</a></li>
+                    <li><a href="#">#ラーメン</a></li>
+                    <li><a href="#">#カフェ</a></li>
+                    <li><a href="#">#アイス</a></li>
+                    <li><a href="#">#祭り</a></li>
+                    <li><a href="#">#自然</a></li>
+                    <li><a href="#">#体験</a></li>
+                    <li><a href="#">#施設</a></li>
+                    <li><a href="#">#親子</a></li>
+                    <li><a href="#">#丼</a></li>
+                    <li><a href="#">#お土産</a></li>
+                    <li><a href="#">#蕎麦</a></li>
+                    <li><a href="#">#イベント</a></li>
+                    <li><a href="#">#温泉</a></li>
+                    <li><a href="#">#足湯</a></li>
+                    <li><a href="#">#ラーメン</a></li>
+                    <li><a href="#">#カフェ</a></li>
+                    <li><a href="#">#アイス</a></li>
+                    <li><a href="#">#祭り</a></li>
+                    <li><a href="#">#自然</a></li>
+                    <li><a href="#">#体験</a></li>
+                    <li><a href="#">#施設</a></li>
+                    <li><a href="#">#親子</a></li>
+                    <li><a href="#">#丼</a></li>
+                    <li><a href="#">#お土産</a></li>
+                    <li><a href="#">#蕎麦</a></li>
+                    <li><a href="#">#イベント</a></li>
+                </ul>
+            </div>
+            <ul class="menu-panel2">
+                <li><a href="#">さいとぽりしー</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <div class="wrapper">
+
+            <!-- グルメ -->
+            <section class="section page-section">
+                <h1>二本松市について</h1>
+
+                <img src="img/about.jpg" class="about-img">
+
+                <p>
+                二本松市は福島県の中通り北部に位置する歴史ある城下町です。
+                </p>
+
+                <p>
+                市内には二本松城跡や岳温泉などの観光スポットがあり、
+                自然や歴史、温泉を楽しむことができます。
+                </p>
+
+                <p>
+                また、毎年開催される二本松提灯祭りは
+                日本三大提灯祭りのひとつとして知られ、
+                多くの観光客が訪れます。
+                </p>
+
+                <p>
+                四季折々の景色や地元グルメなど、
+                魅力あふれる街として人気があります。
+                </p>
+            </section>
+
+            <footer>
+                <ul class="menu-panel2">
+                    <li><a href="#">さいとぽりしー</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+                <small>&copy; 2026 nihome</small>
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
